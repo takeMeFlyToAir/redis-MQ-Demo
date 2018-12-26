@@ -10,6 +10,7 @@ public class Main {
         lists.lpush("order","1");
         lists.lpush("order","2");
         lists.lpush("order","3");
+        JedisUtil.getInstance().getJedis().pipelined();
 
         /**
          * 使用rpop实现消息队列

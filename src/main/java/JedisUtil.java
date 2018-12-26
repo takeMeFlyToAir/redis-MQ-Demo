@@ -7,7 +7,7 @@ import java.util.Set;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig; 
+import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.SortingParams;
 import redis.clients.jedis.util.SafeEncoder;
 
@@ -66,8 +66,8 @@ public class JedisUtil {
       * 从jedis连接池中获取获取jedis对象  
       * @return
       */
-     public Jedis getJedis() {  
-         return jedisPool.getResource(); 
+     public Jedis getJedis() {
+         return jedisPool.getResource();
      }
      
      
